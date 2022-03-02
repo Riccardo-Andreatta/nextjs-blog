@@ -3,6 +3,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "lint": "next lint",
         "start": "next start -p 3200"
     },
     "dependencies": {
@@ -15,6 +16,8 @@
         "remark-html": "^15.0.1"
     },
     "devDependencies": {
+        "eslint": "8.10.0",
+        "eslint-config-next": "12.1.0",
         "sass": "^1.49.9"
     }
 }
