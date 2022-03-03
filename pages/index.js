@@ -19,9 +19,14 @@ export default function Home({ allPostsData }) {
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
+                <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+                <meta name="google" content="notranslate" key="notranslate" />
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>Welcome on this blog. I am Riccardo, I am passionate about Front End stuff. In this case I am building a <em>Next.js</em> blog application.</p>
+                <p>
+                    Welcome to this blog.<br />
+                    I am Riccardo, I am passionate about Front End stuff.
+                    In this case I am building a <em>Next.js</em> blog application.</p>
                 <p>
                     (This is a sample website - you&apos;ll be building a site like this on{' '}
                     <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
