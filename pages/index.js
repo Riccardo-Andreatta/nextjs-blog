@@ -28,8 +28,8 @@ export default function Home({ allPostsData }) {
                     I am Riccardo, I am passionate about Front End stuff.
                     In this case I am building a <em>Next.js</em> blog application.</p>
                 <p>
-                    (This is a sample website - you&apos;ll be building a site like this on{' '}
-                    <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+                    (This is a sample <em>Next.js</em> website - you can build a blog like this following the{' '}
+                    <a href="https://nextjs.org/learn">Next.js tutorial</a>).
                 </p>
             </section>
 
