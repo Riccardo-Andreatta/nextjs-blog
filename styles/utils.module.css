@@ -50,3 +50,20 @@
 .lightText {
     color: #666;
 }
+
+.like-btn {
+    background: #0288d1;
+    border: none;
+    border-radius: .25rem;
+    box-shadow: .2rem .5rem .5rem -.5rem #0b99e6;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 1rem auto 0;
+    outline: none;
+    padding: .4rem;
+    text-align: center;
+    text-decoration: none;
+    width: 6rem;
+}

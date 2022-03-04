@@ -1,10 +1,18 @@
 import Head from 'next/head';
+import { useState } from 'react'
 import Layout from '../../components/layout';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }) {
+    const [likes, setLikes] = useState(0);
+
+    function handleClick() {
+        console.log("increment like count");
+        setLikes(likes + 1);
+    }
+
     return (
         <Layout>
             <Head>
@@ -18,6 +26,7 @@ export default function Post({ postData }) {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
+            <button className={utilStyles['like-btn']} onClick={handleClick}>Like ({likes})</button>
         </Layout>
     )
 }
